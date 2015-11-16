@@ -78,7 +78,7 @@ if yn "Install Magento 2 at `pwd`"; then
 --db-host=localhost --db-name=$db --db-user=root \
 --admin-firstname=Sreeprakash --admin-lastname=Neelakantan --admin-email=sree@schogini.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
---currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--currency=USD --timezone=America/Chicago --use-rewrites=1
 
 fi
 if yn "AGAIN Clear Cache and Set Permissions at `pwd`"; then
