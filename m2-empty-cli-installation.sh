@@ -79,7 +79,7 @@ if yn "Install Magento 2 at `pwd`"; then
 --admin-firstname=Sreeprakash --admin-lastname=Neelakantan --admin-email=sree@schogini.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---backend-frontname=admin
+
 fi
 if yn "AGAIN Clear Cache and Set Permissions at `pwd`"; then
    sudo rm -fR var/cache/* var/page_cache/* 
