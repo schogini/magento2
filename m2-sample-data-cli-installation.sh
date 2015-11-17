@@ -50,10 +50,10 @@ fi
 
 [ `basename $(pwd)` != magento2 ] && cd magento2
 
-replace '"minimum-stability": "alpha"' '"minimum-stability": "beta"' -- composer.json
+replace '"minimum-stability": "alpha"' '"minimum-stability": "stable"' -- composer.json
 
 if yn "Compose Self-Update"; then
-    composer self-update
+    sudo composer self-update
 fi
 if yn "Compose Update (Uses the JSON file, not the Lock file) at `pwd`"; then
     composer update

@@ -6,7 +6,7 @@
 
 #     Follow us on LinkedIn: https://www.linkedin.com/company/schogini-systems
 #     Follow us on Twitter: @schogini
-    
+
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
@@ -48,7 +48,7 @@ fi
 
 [ `basename $(pwd)` != magento2 ] && cd magento2
 
-replace '"minimum-stability": "alpha"' '"minimum-stability": "beta"' -- composer.json
+replace '"minimum-stability": "alpha"' '"minimum-stability": "stable"' -- composer.json
 
 if yn "Compose Self-Update"; then
     composer self-update
